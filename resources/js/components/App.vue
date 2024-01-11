@@ -1,3 +1,5 @@
 <template>
-    <h2>Este é um componente Vue.js integrado com Laravel.</h2>
+  <div>
+    <h2>Vai, funciona, por favor!.</h2>
+  </div>
 </template>

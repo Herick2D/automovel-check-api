@@ -3,19 +3,13 @@ import './bootstrap';
 
 import { createApp } from 'vue';
 import App from './components/App.vue';
-// import Exemplo from './components/Exemplo.vue';
+import Home from './components/Home.vue';
 
 const app = createApp();
+const home = createApp();
 
 app.component('App', App);
+home.component('Home', Home);
 
 app.mount('#app');
-
-
-// Vue.component('Exemplo', Exemplo);
-
-
-
-// const app = new Vue({
-//     el: '#app',
-// });
+home.mount('#home');
