@@ -54,4 +54,10 @@ class VeiculoController extends Controller
 
         return response()->json(null, 204);
     }
+
+    public function showPessoa($idPessoa)
+    {
+        $veiculos = Veiculo::where('idPessoa', $idPessoa)->get();
+        return response()->json($veiculos);
+    }
 }

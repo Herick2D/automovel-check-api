@@ -15,6 +15,7 @@ Route::delete('/pessoa/{id}', [PessoaController::class, 'destroy']);
 
 Route::get('/veiculo', [VeiculoController::class, 'index']);
 Route::get('/veiculo/{id}', [VeiculoController::class, 'show']);
+Route::get('/veiculo/pessoa/{idPessoa}', [VeiculoController::class, 'showPessoa']);
 Route::post('/veiculo', [VeiculoController::class, 'store']);
 Route::put('/veiculo/{id}', [VeiculoController::class, 'update']);
 Route::delete('/veiculo/{id}', [VeiculoController::class, 'destroy']);
