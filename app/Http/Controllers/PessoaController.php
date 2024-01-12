@@ -22,9 +22,9 @@ class PessoaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'age' => 'required|integer',
-            'sex' => 'required',
+            'nome' => 'required',
+            'idade' => 'required|integer',
+            'sexo' => 'required',
         ]);
 
         $pessoa = Pessoa::create($request->all());
@@ -34,8 +34,8 @@ class PessoaController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'required',
-            'age' => 'required|integer',
+            'nome' => 'required',
+            'idade' => 'required|integer',
         ]);
 
         $pessoa = Pessoa::findOrFail($id);

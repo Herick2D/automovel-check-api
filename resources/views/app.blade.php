@@ -23,7 +23,6 @@
     <body class="antialiased">
         <div id="app">
             @yield('content')
-            <h1>Teste!</h1>
             <App />
             
 

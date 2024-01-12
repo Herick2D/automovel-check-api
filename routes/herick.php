@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PersonController;
+use App\Http\Controllers\PessoaController;
 
-Route::get('/people', [PersonController::class, 'index']);
-Route::get('/people/{id}', [PersonController::class, 'show']);
+Route::get('/pessoa', [PessoaController::class, 'index']);
+Route::get('/pessoa/{id}', [PessoaController::class, 'show']);

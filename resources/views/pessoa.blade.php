@@ -21,9 +21,9 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="home">
+        <div id="pessoa">
             @yield('content')
-            <Home />
+            <Pessoa />
 
             
 

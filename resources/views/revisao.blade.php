@@ -21,9 +21,10 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="home">
+        <div id="revisao">
             @yield('content')
-            <Home />
+            <h1>ESSA AQUI É O REVISAO</h1>
+            <Revisao />
 
             
 
